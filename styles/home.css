@@ -3,22 +3,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,500;0,700;1,100;1,500;1,700&display=swap');
 
 /* Variaveis */
-:root{
-    --corAzul0: blue;
+:root {
+    --corAzul0: #0424D9;
+    --corAzul1: #0439D9;
+    --corAzul2: #1B44BF;
+    --corAzul3: #50A7F2;
+    --corCinza: #BFBFBF;
 
     --fontePadrao: 'Noto Sans', 'Arial', 'Helvetica', sans-serif;
 }
 
 /* Geral */
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
 /* Body */
-body{
-    margin: 0px;
-    background-color: lightcyan;
+body {
+    margin: 0px;    
     font-family: var(--fontePadrao);
 }
 
+/* Header */
+header{
+    color: whitesmoke;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--corAzul0), var(--corAzul3));
+    padding-top: 50px; padding-bottom: 50px;
+    min-height: 150px;
+    transition-duration: 1s;
+}
+header h1{
+    margin-bottom: 20px;
+    font-size: 3.5em; 
+    text-shadow: 3px 3px 5px black;
+}
+header p{
+    text-shadow: 3px 3px 5px black;
+}
+
+/* Main */
+main{
+    background-color: var(--corCinza);
+    max-width: 800px; min-width: 300px;
+    margin: auto; margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 5px 5px black;
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+
+}
+
+/* Nav */
+nav{
+    background-color: var(--corAzul3);
+    padding: 15px;
+    box-shadow: 0px 2px 2px black;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none; text-shadow: 3px 3px 10px black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    transition-duration: 1s;
+}
+nav a:hover{
+    background-color: var(--corAzul0);
+    
+      
+}
+
+
+/* Aside */
+aside{
+    background-color: #bfbfbf41;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px black;  
+}
+aside > ul{
+    list-style-type: "\2714\00a0\00a0";
+    list-style-position: inside;
+    
+}
+
+
+/* Footer */
+footer{
+    text-align: center;
+}
